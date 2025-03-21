@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12_HTML연습문제3</title>
+  <style>
+  @font-face {
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+   *{
+    font-family:'Ownglyph_corncorn-Rg' ; 
+   }
+
+  </style>
+</head>
+<body>
+  <h1>회원 가입</h1>
+  <form>
+    <fieldset>
+      <legend>필수 입력 정보</legend>
+      <table>
+       <tr>
+        <th width="100">ID 
+          <td><input></td>
+          <td><button>중복확인</button></td>
+        </th>
+      </tr>
+      <tr> 
+        <th> 
+        비밀번호</th>
+        <td colspan="2"><input type="password" size="30"></td>
+      </tr>
+       
+      <tr>
+        <th>비밀번호확인</th>
+        <td colspan="2"><input type="password" size="30"></td>
+      </tr>
+        
+      <tr>
+        <th>Email</th>
+        <td><input type="email"></td>
+        <td><select>
+          <option>직접입력</option>
+          <option>@naver.com</option>
+        </select></td>
+      </tr>
+        
+      </table>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>추가 정보</legend>
+      프로필사진 <input type="file"> <br><br>
+      성별: 
+      <label> <input type="radio" name="gender"> 남자 </label>
+      <label><input type="radio" name="gender"> 여자 </label>
+      <br><br>
+      생년월일:<input type="date">
+      <br><br>
+      취미<br>
+     
+      <lable>
+        <input type="checkbox" name="hobby"> 
+         </lable>야구
+
+        <lable>
+        <input type="checkbox" name="hobby"> 
+      </lable>농구
+
+        <lable>
+        <input type="checkbox" name="hobby"> 
+          </lable>축구
+        <br>
+
+        <lable>
+          <input type="checkbox" name="hobby"> 
+        </lable>공부
+          <lable>
+          <input type="checkbox" name="hobby"> 
+        </lable>음악감상
+        <br>
+        <label>
+          <input type="checkbox" name="hobby">기타
+          <input>
+        </label>
+        
+       <br><br>
+       자기소개<br>
+       <textarea rows="8" cols="70"></textarea>
+      
+      
+    </fieldset>
+    <br>
+    <button>회원가입</button>
+    <button type="reset">다시입력</button>
+    <button type="menu">이전으로</button>
+
+
+
+  <form>
+</body>
+</html>
