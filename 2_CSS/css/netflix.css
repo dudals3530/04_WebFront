@@ -1,0 +1,40 @@
+.body{
+  background-color: black;
+}
+
+.poster-box{
+  position: relative;
+  margin: 0 50px;
+}
+.poster-box img{
+  width: 200px;
+}
+
+.first { /*p 태그는 기본 마진
+   margin - top : 1em;
+   margin - botoom : 1em
+   
+   em 단위 ? 
+   상대적 크기 단위 ,
+   현재 요소의 font-size 를 기준으로 
+   배율을 정함
+   */
+  -webkit-text-stroke:5px white ;
+  font-weight: bold;
+  color: black;
+ font-size: 150px; 
+ position: absolute ;
+  
+bottom: 0;
+left: -50px;
+margin: 0;
+
+
+}
+
+
+  /*
+크롬 , 사파리,엣지 등 브라우저 전용속성중
+하나 글씨테두리 색상과 두께를 한번에 지정.*/
+/*-webkit-text-stroke :5px white
+color : black*/
