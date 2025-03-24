@@ -1,0 +1,51 @@
+/*
+:only-child
+
+
+특정요소 자식 딱 하나만 있을때 적용됨.*/
+#test1 > p:only-child{
+  background-color: aquamarine;
+}
+
+/* : only of- type
+ 특정요소중  다른타입의 자식이더라도 딱하나만 있으면 적용됨*/
+#test2 > p:only-of-type{
+  background-color: red;
+}
+
+/* : empty 
+ 자식요소가 없는 것을 선택하는 선택자*/
+#test3 > p:empty{
+  background-color: greenyellow;
+  height: 30px;
+}
+
+
+/* 여러 선택자 동시 선택*/
+
+#test4-1, #test4-2, .test4-3{
+  background-color: yellow;
+  color: red;
+}
+
+/*특정 요소 내부에 있는 특정 클래스만선택하기*/
+/*
+#test5-1 후손중 클래스가 c5 인 
+요소를 선택
+*/
+
+#test5-1 .c5{
+  background-color: aqua;
+}
+
+/* #test5-2의 자식 중 클래스가 c5인 li 요소만 선택*/
+
+#test5-2 > li.c5 {
+  background-color: tomato;
+}
+
+/* 클래스가 여러개인 요소만 선택
+ 그냥 붙여서 쓰면 됨 . 띄어쓰기 없이*/
+.test6.c6{
+  background-color: red;
+}
