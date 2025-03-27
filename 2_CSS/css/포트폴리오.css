@@ -1,0 +1,359 @@
+*{
+  box-sizing: border-box;
+ /* border: 1px solid black;*/
+ 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: auto;
+}
+
+
+  
+
+
+ header{
+  display: flex;
+  height: 64px;
+  border: 1px solid #ddd; 
+ }
+ header section:nth-of-type(1),
+ header section:nth-of-type(3) {
+  
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ header section:nth-of-type(2){
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+  
+.search-area fieldset{
+  border: 2px solid gray;
+  border-radius: 50px;
+  padding: 2px; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#query{
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  height: 10px;
+  border: 0;
+  /*outline: input 태그에 포커싱되었을때
+  이를 표현하기 위한 바깥선*/
+  outline: 0;
+  flex-basis: 92%;
+}
+.f a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-btn{
+  flex-basis: 4%;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(79, 78, 78);
+  border: 0;
+  padding: 0;
+  /*transparent 배경색을 투명하게 바꿈*/
+  background-color: transparent;
+  
+} 
+
+.f{
+  display: flex;
+  width: 600px;
+}
+
+.id{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.id button{
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.a {
+  display: flex;
+  height: calc(100vh - 64px);
+  justify-content: center;
+  text-align: center; /* 텍스트를 가운데 정렬 */
+ 
+  
+}
+  
+  
+.a-1{
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;
+  overflow-y: auto;
+  padding: 10px;
+ 
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  
+}
+
+.a-a-1{
+  display: flex;
+  text-align: center; /* 텍스트를 가운데 정렬 */
+ 
+}
+
+.a-2{
+  flex-basis: calc(100% - 300px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.a-1 ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+.a-1 li a{
+  display: flex;
+}
+
+
+.a-1 div{
+  display: flex;
+  
+  margin-bottom: 10px;
+  text-align: center;
+}
+.a-1 a{
+  text-decoration: none;
+  font-size: 15px;
+ 
+  color: black;
+  height: 100%;
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  transition-duration: 0.2s;
+  
+  
+  align-items: center;
+  width: 100%
+
+}
+.a-1 a:hover{
+  background-color: rgb(232, 232, 232);
+  color: black;
+  height: 100%;
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  transition-duration: 0.2s;
+  border-radius: 50px;
+  
+  width: 100%
+}
+.mic:hover {
+
+}
+
+
+
+
+
+.main-menu {
+ display: flex;
+ flex-direction: column; 
+ position: sticky;
+ top:0;
+ 
+}
+.main-menu ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+  /* list-style: none;
+  목록에 나타는 기호를 사용안한다는 뜻*/
+  list-style: none;
+  height: 40px;
+ 
+  
+}
+.main-menu li{
+  flex-basis: 100px;
+  display: flex;
+}
+.main-menu a{
+  text-decoration: none;
+  font-size: 8px;
+  background-color: rgb(232, 232, 232);
+  color: black;
+  height: 100%;
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  transition-duration: 0.2s;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+  
+}
+.main-menu a:hover{
+  text-decoration: none;
+  font-size: 8px;
+  background-color: rgb(141, 138, 138);
+  color: black;
+  height: 100%;
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  transition-duration: 0.2s;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+
+}  
+
+
+.a-2{
+  display: flex;
+  
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  width: 100%; 
+  padding: 10px; 
+  gap: 10px; 
+}
+
+.content-1 {
+  flex: 1 1 calc(33.33% - 20px); 
+  box-sizing: border-box;
+  margin-bottom: 10px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  
+}
+
+.content-1 a {
+  text-decoration: none; 
+  color: black; 
+  position: relative;
+  
+}
+
+.main-img {
+  border-radius: 20px;
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.content-1 div {
+  display: flex;
+  justify-content: flex-start; 
+  width: 100%; 
+}
+.content-1 span{
+  font-size: 10px;
+  color: rgb(163, 162, 162);
+}
+
+
+.shorts-container {
+  padding: 20px;
+}
+
+
+.shorts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shorts-header img {
+  height: 24px;
+}
+
+
+.shorts-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 화면 크기에 따라 자동으로 정렬 */
+  gap: 20px; 
+}
+
+
+.short-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  border-radius: 10px; 
+  overflow: hidden;
+  background-color: #fff; 
+}
+
+
+
+.short-a img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+
+.short-video-details {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.short-video-details span {
+  font-size: 14px;
+}
+
+.short-video-icon {
+  width: 20px;
+  height: 20px;
+}
