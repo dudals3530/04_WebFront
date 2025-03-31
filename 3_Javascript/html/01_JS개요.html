@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>01_JS개요
-
-  </title>
-</head>
-<body>
-  <h1>Script 언어란?</h1>
-  <pre>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01_JS개요</title>
+  </head>
+  <body>
+    <h1>Script 언어란?</h1>
+    <pre>
     기본 프로그램의 동작을
     사용자의 요구에 맞게 수행되도록 해주는 용도의 언어
 
@@ -21,68 +19,60 @@
 
     - 장점 : 컴파일에 소요되는 시간이 없음, 운영체제(OS)에 종속되지 않음.
     - 단점 : 컴파일 방식과 달리, 한 줄씩 해석하며 실행하기 때문에 속도가 느릴 수 있음.
-</pre>
+</pre
+    >
 
+    <hr />
 
-<hr>
-
-
-<h1>Javascript 란?</h1>
-<pre>
+    <h1>Javascript 란?</h1>
+    <pre>
     웹 브라우저(크롬, 엣지, 웨일, 파이어폭스 등)에서
     주로 사용하는 인터프리터 방식의 객체 지향 프로그래밍 언어.
 
 
     객체 지향 프로그래밍 언어: 객체(Object)를 만들고 조작하며, 객체끼리 관계를
     맺음으로써 다수의 객체가 함께 명령을 수행하는 것.
-</pre>
-  <hr>
-  <h1>
-    Javascript 코드 작성 밥법
-  </h1>
+</pre
+    >
+    <hr />
+    <h1>Javascript 코드 작성 밥법</h1>
 
-  <ol>
-    <li>브라우저 개발자도구 -> Console 에 직접 작성</li>
-    <li>HTML 내부에 script 태그를 이용해서 작성 (Internal 방식)
-      <br>
+    <ol>
+      <li>브라우저 개발자도구 -> Console 에 직접 작성</li>
+      <li>
+        HTML 내부에 script 태그를 이용해서 작성 (Internal 방식)
+        <br />
 
-      <!--버튼이 클릭 되었을때 interalFn 함수를 호출 (실행)-->
-      <button type="button" onclick="interalFn()">Internal 방식 확인</button>
+        <!--버튼이 클릭 되었을때 interalFn 함수를 호출 (실행)-->
+        <button type="button" onclick="interalFn()">Internal 방식 확인</button>
 
-      <script>
-        // JS 한줄 주석
-        /* 
+        <script>
+          // JS 한줄 주석
+          /* 
         
         Js 범위주석
         
         */
-        
-        
-        function interalFn(){
-          alert("알람버튼눌림")
-        }
-      </script>
 
-    </li>
+          function interalFn() {
+            alert("알람버튼눌림");
+          }
+        </script>
+      </li>
 
-    <li>
-      <button type="button" onclick="externalFn()">external 방식</button>
-    </li>
+      <li>
+        <button type="button" onclick="externalFn()">external 방식</button>
+      </li>
 
-    <li>
-      태그에 직접 JS 코드를 작성 (inline 방식) <-- 이방식은 좀 지양함
-      <button type="button" onclick="alert('inline버튼 클릭됨')">
-        inline 방식 확인
-      </button>
+      <li>
+        태그에 직접 JS 코드를 작성 (inline 방식) <-- 이방식은 좀 지양함
+        <button type="button" onclick="alert('inline버튼 클릭됨')">
+          inline 방식 확인
+        </button>
+      </li>
+    </ol>
 
-    </li>
-
-  </ol>
-
-
-
-
-  <!--
+    <!--
     script 택르 작성위치
     1.<body> 태그의 끝부분에 위치 : HTML 문서의 내용을 먼저로드하고 렌더링한후에
       Javascript 코드를 실행하기 위해서
@@ -92,6 +82,6 @@
       Dom : doucument object modeling
       브라우저에 화면에띄는 모든 요소들은 dom이라고함.
   -->
-  <script src="./js/01_JS개요.js"></script>  
-</body>
+    <script src="./js/01_JS개요.js"></script>
+  </body>
 </html>

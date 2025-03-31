@@ -23,7 +23,7 @@ img {
  header{
   display: flex;
   height: 64px;
-  border: 1px solid #ddd;
+
   position: fixed;
   top: 0;
   width: 100%;
