@@ -112,6 +112,19 @@ test2.addEventListener("click", function () {
 
 const bx = document.querySelector("#box3");
 const input = document.querySelector("#input3");
+const colorMap = {
+    "black": "검정색",
+    "white": "흰색",
+    "red": "빨간색",
+    "green": "초록색",
+    "blue": "파란색",
+    "yellow": "노란색",
+    "purple": "보라색",
+    "orange": "주황색",
+    "pink": "분홍색",
+    "brown": "갈색",
+    "gray": "회색"
+  };
 
 input.addEventListener("keyup", function (e) {
   if (e.key == "Enter") {
@@ -122,7 +135,9 @@ input.addEventListener("keyup", function (e) {
       bx.addEventListener("click", function () {
 
         //e.target : 이벤트가 발생한 대상 요소 == this
-        alert(`배경색은 ${bx.style.backgroundColor}입니다.`);
+        let colorName = bx.style.backgroundColor;
+        let translatedColor = colorMap[colorName] || colorName;
+        alert(`배경색은 ${translatedColor}입니다.`);
       });
     }
   }

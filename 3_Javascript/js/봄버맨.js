@@ -73,21 +73,27 @@ document.addEventListener("keydown", function(e){
         const increaseSizeInterval = setInterval(() => {
           let currentWidth = parseInt(bombs[i].style.width);
           let currentHeight = parseInt(bombs[i].style.height);
-          bombs[i].style.width = `${currentWidth + 10}px`;
-          bombs[i].style.height = `${currentHeight + 10}px`;
+          bombs[i].style.width = `${currentWidth + 20}px`;
+          bombs[i].style.height = `${currentHeight + 20}px`;
         }, 200);
-
+  
         // 고블린과 폭탄의 충돌 체크
         checkBombCollision(bombs[i]);
-
-        // 폭탄이 터진 후 2초 후에 제거
-        setTimeout(() => {
-          clearInterval(increaseSizeInterval);
-          bombs[i].remove();
-        }, 2000);
+  
+        // increaseSizeInterval을 clear할 필요가 있으므로 bombs[i]에 저장
+        bombs[i].increaseSizeInterval = increaseSizeInterval;
       }
-      // 폭탄 배열 초기화
-      bombs = [];
+  
+      // 모든 폭탄을 2초 후에 제거
+      setTimeout(() => {
+        for (let i = 0; i < bombs.length; i++) {
+          clearInterval(bombs[i].increaseSizeInterval);
+          bombs[i].remove();
+        }
+  
+        // 폭탄 배열 초기화
+        bombs = [];
+      }, 2000);
     } else {
       alert("폭탄이 없습니다.");
     }
