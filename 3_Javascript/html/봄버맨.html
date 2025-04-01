@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    #box{
-      width: 500px;
-      height:500px;
-      border: 2px solid black;
-      overflow: hidden;
-    }
-    img{
-      width: 50px;
-      
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        overflow: hidden;
+      }
+      img {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>봄버맨</h1>
+    <ul>
+      <li>방향키로 이동 해야한다. 누그록있으면 키방향으로 계속이동</li>
+      <li>x키누를때마다 폭탄 생성</li>
+      <li>z키누르면 모든 폭탄 터짐</li>
+    </ul>
+    <div id="box">
+      <img src="/images/봄버맨/bomberman.png" id="bomberman" />
+    </div>
+    <h1>제거한 고블린 수: <span id="goblinCount">0</span></h1>
 
-
-  </style>
-</head>
-<body>
-  <h1>봄버맨</h1>
-  <ul>
-    <li>방향키로 이동 해야한다. 누그록있으면 키방향으로 계속이동</li>
-    <li>x키누를때마다 폭탄 생성 </li>
-    <li>z키누르면 모든 폭탄 터짐 </li>
-  </ul>
-  <div id="box">
-    <img src="/images/봄버맨/bomberman.png" id="bomberman">
-    
-  </div>
-
-  <img src="/images/봄버맨/bomb.png">
-  <img src="/images/봄버맨/boomm.png">
-  <img src="/images/봄버맨/31952459-고블린.jpg" id="goblin">
-  <script src="/3_Javascript/js/봄버맨.js"></script>
-</body>
+    <script src="/3_Javascript/js/봄버맨.js"></script>
+  </body>
 </html>
