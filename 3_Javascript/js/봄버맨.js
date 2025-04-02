@@ -1,3 +1,5 @@
+// -- 내가만들어본 봄버맨
+
 const bomberman = document.querySelector("#bomberman");
 const goblinCountSpan = document.querySelector("#goblinCount");
 
@@ -218,3 +220,46 @@ function transformBomberman() {
     console.log("봄버맨 원래 상태로 복귀");
   }, 5000); // 변신 상태 5초 유지
 }
+  
+
+//-----------------------------------------------------------------
+/*
+//선생님과 같이풀이
+let xindex = 0; // x 좌표 방향대로 얼마만큼 이동했는지 기억할 변수
+let yindex = 0; // y좌표 방향대로 얼마만큼 이동했는지 기억할 변수
+document.addEventListener("keydown", function(e) {
+
+  const bomberman = document.querySelector("#bomberman");
+
+  switch(e.key){
+    case 'ArrowRight' : xindex += 10;  break;
+    case 'ArrowLeft' :  xindex -= 10;  break;
+    case 'ArrowUp' :    yindex -= 10;  break;
+    case 'ArrowDown' :  yindex += 10;  break;
+    case 'x' : 
+      const box = document.querySelector('#box');
+      box.innerHTML +=
+      `<img src="/images/봄버맨/bomb.png"
+        class="bomb"
+        style="transform: translate(${xindex}px, ${yindex}px);
+        position:absolute;">`;
+      break;
+    case 'z' :explodeBomb(); break;
+    default: alert("방향키,z,x만 가능합니다!");
+  }
+
+  bomberman.style.transform = `translate(${xindex}px,${yindex}px)`;
+
+});
+
+const explodeBomb = () => {
+  const bombs = document.querySelectorAll(".bomb");
+  // bombs 유사배열형태
+
+  //for .. of 문 : 배열같은 반복가능한 객체의 요소를 순차적으로 순회하는 반복분
+  for (let bomb of bombs){
+    bomb.src = "/images/봄버맨/boomm.png";
+  }
+  
+
+}*/

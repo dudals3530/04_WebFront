@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13_DOM</title>
+  </head>
+  <body>
+    <h1>DOM(Document Object Model)</h1>
+
+    <pre>
+        HTML(웹문서, 웹페이지) 문서를 객체 기반으로 표현한 것
+        -> HTML 문서에 작성된 내용을 트리구조(계층형으로 표현)로 나타냈을 때
+            각각의 태그, TEXT, COMMENT 등을 Node라고 한다.
+
+
+        document : {
+            DOCTYPE : html,
+            HTML : {
+                HEAD : {
+                    TITLE : { TEXT : "문서 제목" },
+                    STYLE : {...},
+                    META : {...}
+                } ,
+                BODY : {
+                    H1 : { TEXT : "제목", ATTRIBUTE : "속성" },
+                    COMMENT : {TEXT : "주석 내용"},
+                    DIV : {...}
+                    ul#test{ childNodes : [], innerText : 123,   }
+                }
+            }
+        }
+    </pre>
+
+    <hr />
+    <h1>Node 확인하기</h1>
+
+    <ul id="test">
+      <!--Node 확인테스트 주석입니다.-->
+      <li id="li1">1번</li>
+      <li class="cls">2번</li>
+      <!-- 중간 주석 -->
+      <li style="background-color: yellow">3번</li>
+      <li>
+        <a href="#">4번</a>
+      </li>
+    </ul>
+
+    <button id="btn1">확인하기</button>
+
+    <script src="/3_Javascript/js/13_DOM.js"></script>
+  </body>
+</html>
