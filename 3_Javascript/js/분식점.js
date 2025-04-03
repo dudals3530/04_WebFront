@@ -55,10 +55,11 @@ function change(menu) {
     const span = spans[i]; //이젠 또 for문을 돌아 span의 content를 가져와
     let text = span.textContent; // text에다가 저장시켯
 
-    if (/^\d+원$/.test(text)) {
-      // 이게 정규식표현이래 ...ㅎㄷㄷ 만약 text의 숫자 + 원으로만 되어있으면
-      text = text.replace(/[^0-9]/g, ""); //  replace를 이용하여 숫자로만 만들어주기  replace 개유용함 ㅇㅇ
-    } // replace 꼮꼮 기억해두자
+    if (/^\d+원$/.test(text)) { 
+                                                      // 이게 정규식표현이래 ...ㅎㄷㄷ 만약 text의 숫자 + 원으로만 되어있으면
+      text = text.replace(/[^0-9]/g, "");       //  replace를 이용하여 숫자로만 만들어주기  replace 개유용함 ㅇㅇ
+    }                                                // replace 꼮꼮 기억해두자
+    
     input.value = text;
     input.type = "text";
     input.className = span.className; // input태그와 span태그들의 클래스네임을 갖게해 add,remove를 안쓰고도할수잇음
